@@ -1,0 +1,44 @@
+button {
+  font-family: var(--font-nunito);
+  font-weight: var(--font-weight-3);
+  border: none;
+  border-radius: 8px;
+  transition: 500ms;
+}
+
+.button--general {
+  background-color: var(--color-primary-1);
+  color: var(--color-white);
+
+  height: 3rem;
+
+  padding: 13px 20px;
+
+  font-size: var(--text-size-1);
+}
+
+.button--general:hover {
+  background-color: var(--color-primary-2);
+  transition: 500ms;
+}
+
+.button--logout {
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-4);
+
+  height: 2.5rem;
+  width: 4rem;
+
+  padding: 1rem;
+
+  font-size: var(--text-size-2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button--logout:hover {
+  background-color: var(--color-gray-3);
+  color: var(--color-white);
+}

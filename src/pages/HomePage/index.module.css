@@ -1,0 +1,48 @@
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.noCard__img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.noCard__msg {
+  padding: 2rem 0 1rem 0;
+  max-width: 100%;
+}
+
+.entries__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .AppContainer {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .entries__container {
+    max-width: 60%;
+    margin-top: 1rem;
+  }
+
+  .entryFields__container {
+    width: 40%;
+  }
+
+  .noCard__msg {
+    padding: 0;
+  }
+
+  .noCard__img {
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

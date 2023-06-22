@@ -1,0 +1,72 @@
+.valuesList__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.button__remove {
+  background-image: url(./../../assets/img/trash.svg);
+  background-repeat: no-repeat;
+  width: 1.375rem;
+  height: 1.375rem;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.button__remove:hover {
+  background-color: var(--color-gray-3);
+  color: var(--color-white);
+  filter: invert(100%) contrast(200%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: var(--color-gray-1);
+  transition: 500ms;
+  height: 10rem;
+}
+
+.card__description,
+.card__values {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.card:hover {
+  transition: 500ms;
+  background-color: var(--color-gray-2);
+}
+
+.expense {
+  border-left: 6px solid var(--color-primary-2);
+}
+
+.income {
+  border-left: 6px solid var(--color-secundary);
+}
+
+@media (min-width: 769px) {
+  .valuesList__container {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 680px;
+  }
+
+  .card {
+    height: 5.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card__values {
+    flex-direction: row;
+    gap: 6rem;
+  }
+}
